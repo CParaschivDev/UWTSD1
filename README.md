@@ -4,15 +4,28 @@ platforms: python
 author: cephalin
 ---
 
-# Flask and PostgreSQL sample for Azure App Service
+# UWTSD Student Registration System
 
-This is a sample application that you can use to follow along with the tutorial at 
-[Build a Python and PostgreSQL web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-python-postgresql). 
+This is a student registration application for the University of Wales Trinity Saint David (UWTSD). The application allows students to register for events and provides an interface to view all registered attendees.
 
-The sample is a simple Python Flask application that connects to a PostgreSQL database via SQLAlchemy.
+The application is built with Python Flask and connects to a PostgreSQL database via SQLAlchemy.
+
+## Features
+
+- Student registration with name and email
+- View list of all registered students/attendees
+- Confirmation page after successful registration
+- PostgreSQL database storage with SQLAlchemy ORM
+- Responsive web interface using Bootstrap
+
+## Technical Details
 
 The database connection information is specified via environment variables `DBHOST`, `DBPASS`, `DBUSER`, and `DBNAME`. This app always uses the default PostgreSQL port.
 
+## Deployment
+
+The application is configured for deployment to Azure App Service with automated CI/CD via GitHub Actions.
+
 # Contributing
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project follows standard open source contribution practices. Please ensure all contributions align with the university's guidelines and policies.
